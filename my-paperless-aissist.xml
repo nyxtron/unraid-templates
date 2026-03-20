@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Paperless-AIssist</Name>
+  <Repository>nyxtronlab/paperless-aissist:latest</Repository>
+  <Registry>https://hub.docker.com/r/nyxtronlab/paperless-aissist</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/nyxtron/paperless-aissist/issues</Support>
+  <Project>https://github.com/nyxtron/paperless-aissist</Project>
+  <Overview>AI-powered document processing assistant for Paperless-NGX. Features: AI classification, OCR post-processing, document chat, auto-processing scheduler, and more.</Overview>
+  <Category>AI: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8099]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/nyxtron/unraid-templates/main/my-paperless-aissist.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/nyxtron/paperless-aissist/main/icon.png</Icon>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1773853036</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port: Web UI" Target="80" Default="8099" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Path: Data" Target="/app/data" Default="/mnt/user/appdata/paperless-aissist" Mode="rw" Description="Database and app data storage" Type="Path" Display="always" Required="true" Mask="false"/>
+  <TailscaleStateDir/>
+</Container>
